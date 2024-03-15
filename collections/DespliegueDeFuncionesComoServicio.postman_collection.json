@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "34234d82-4909-437f-8385-6627d09047b9",
+		"name": "DespliegueDeFuncionesComoServicio",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "funcion-heroes-listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{region}}-{{id_proyect}}.cloudfunctions.net/funcion-heroes-listar",
+					"protocol": "https",
+					"host": [
+						"{{region}}-{{id_proyect}}",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"funcion-heroes-listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "funcion-heroes-detalle",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://{{region}}-{{id_proyect}}.cloudfunctions.net/funcion-heroes-detalle?id=0",
+					"protocol": "https",
+					"host": [
+						"{{region}}-{{id_proyect}}",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"funcion-heroes-detalle"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id_proyect",
+			"value": "",
+			"type": "default"
+		},
+		{
+			"key": "region",
+			"value": "us-central1",
+			"type": "default"
+		}
+	]
+}
