@@ -1,4 +1,4 @@
-import list.utilities as f
+import utilities as f
 from flask import jsonify
 
 #Importación de la información de los heroes

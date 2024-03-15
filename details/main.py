@@ -1,4 +1,4 @@
-import details.utilities as f
+import utilities as f
 from flask import jsonify, abort
 
 #Importación de la información de los heroes
